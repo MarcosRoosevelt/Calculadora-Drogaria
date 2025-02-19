@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Concentração de Drogas</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="values">
-      <h1>Calculadora</h1>
-      <label for="ml-hr">Ml/Hr: </label>
-      <input type="number" name="ml-hr" />
+    <main>
+      <div id="values">
+        <h1>Calculadora</h1>
+        <div id="mlhr" class="fields">
+          <label for="ml-hr">Ml/Hr: </label>
+          <input type="number" name="ml-hr" id="medida-input" />
+        </div>
 
-      <label for="peso">Peso (kg) </label>
-      <input type="number" name="peso" />
+        <div id="peso" class="fields">
+          <label for="peso">Peso (kg) </label>
+          <input type="number" name="peso" id="peso-input" />
+        </div>
 
-      <label for="mg-soro">Total de mg no soro: </label>
-      <input type="number" name="mg-soro" />
+        <div id="soro" class="fields">
+          <label for="mg-soro">Total de mg no soro: </label>
+          <input type="number" name="mg-soro" id="soro-input" />
+        </div>
 
-      <label for="ml">Ml (Soro de 250ml ou 500 ml): </label>
-      <input type="number" name="ml" />
-    </div>
+        <div id="ml" class="fields">
+          <label for="ml">Ml: </label>
+          <input type="number" name="ml" id="ml-input" />
+        </div>
+      </div>
 
-    <div id="button">
-      <input type="button" value="Calcular" />
-    </div>
+      <div class="outcome">
+        <div class="text">
+          <h2>Resultado do cálculo:</h2>
+        </div>
 
-    <div id="outcome">
-      <input type="number" name="outcome" />
-      <label for="result">mcg/kg/min</label>
-    </div>
+        <div id="outcome-div"></div>
+      </div>
 
-    <div id="reset">
-        <input type="button" value="Reset">
-    </div>
+      <div id="buttons">
+        <div id="button">
+          <button id="outcome" onclick="calcular()">Calcular</button>
+        </div>
+
+        <div id="reset">
+          <button onclick="zerarInputs()">Reset</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
