@@ -4,8 +4,10 @@ function calcular() {
   const soro = parseFloat(document.getElementById("soro-input").value);
   const ml = parseFloat(document.getElementById("ml-input").value);
 
-  const outcome = medida + peso + soro + ml;
-
+  const concentration = soro / ml;
+  const concentration__by_flow_rate = concentration * medida;
+  const outcome = concentration__by_flow_rate / peso;
+  
   document.getElementById("outcome-div").innerHTML = outcome + " mcg/kg/min";
 }
 
