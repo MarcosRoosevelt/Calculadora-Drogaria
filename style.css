@@ -116,6 +116,10 @@ main .outcome .text h2 {
 }
 
 @media (max-width: 768px) {
+  main .outcome {
+    display: block;
+  }
+
   #button button,
   #reset button {
     padding: 40px;
