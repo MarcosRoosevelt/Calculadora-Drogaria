@@ -32,19 +32,23 @@ main {
 }
 
 #values #mlhr label {
-  margin-right: 182px;
+  margin-right: 186px;
 }
 
 #values #peso label {
-  margin-right: 164px;
+  margin-right: 169px;
 }
 
 #values #soro label {
-  margin-right: 79px;
+  margin-right: 196px;
+}
+
+#values #unit-of-measure label {
+  margin-right: 12px;
 }
 
 #values #ml label {
-  margin-right: 211px;
+  margin-right: 215px;
 }
 
 #values label {
