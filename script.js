@@ -9,8 +9,7 @@ function calcular() {
   const concentration__by_flow_rate = concentration * medida;
   const outcome = concentration__by_flow_rate / peso;
 
-  document.getElementById("outcome-div").innerHTML =
-    outcome.toFixed(2) + " " + soro_unit + "/kg/h";
+  document.getElementById("outcome-div").innerHTML = Math.floor(outcome * 100) / 100  + " " + soro_unit + "/kg/h";
 }
 
 function zerarInputs() {
