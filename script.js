@@ -18,5 +18,6 @@ function zerarInputs() {
   document.getElementById("peso-input").value = "";
   document.getElementById("soro-input").value = "";
   document.getElementById("ml-input").value = "";
+  document.getElementById("soro-unit-input").value = "";
   document.getElementById("outcome-div").innerHTML = "";
 }
